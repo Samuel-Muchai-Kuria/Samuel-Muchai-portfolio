@@ -202,22 +202,26 @@
         }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-0l-ZVEx9Ns0yDZ9frmeT0a4WsYtEZqhIOU_XBEwwlI8WTOaS-U-MntDPQIVnlzkX/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwaiKOO4Am7CmjoHRJzGIveXW7-dAKjP963oXLPZAwH8IYRMxsH38SWktAVQP6PL2Bn/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                msg.innerHTML = "Message sent successfully!!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
+                if (response.ok) {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(() => msg.innerHTML = "", 5000);
+                    form.reset();
+                } else {
+                    msg.innerHTML = "Failed to send message. Please try again.1";
+                }
             })
-
-            .catch(error => console.error('Error!', error.message))
-        })
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Failed to send message. Please try again.";
+            });
+        });
       </script>
 </body>
 </html>
