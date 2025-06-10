@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
     <script src="https://kit.fontawesome.com/e4e3edd389.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -174,54 +174,18 @@
             </div>
         </div>
     </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZIzaYKLhiij3A_3uOliVllMKYS8v1mGjbITRWIycLLyAHlAVRstYE4c2zfDNzvPLT/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                if (response.ok) {
-                    msg.innerHTML = "Message sent successfully!";
-                    setTimeout(() => msg.innerHTML = "", 5000);
-                    form.reset();
-                } else {
-                    msg.innerHTML = "Failed to send message. Please try again.1";
-                }
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                msg.innerHTML = "Failed to send message. Please try again.";
-            });
-        });
-      </script>
+    <div>
+    <h3>My Hobbies</h3>
+        <ol>
+            <li>Photography: Capturing moments through the lens, with a focus on event and nature photography.</li>
+            <li>Fitness Enthusiast: Regularly hitting the gym to stay active and maintain a healthy lifestyle.</li>
+            <li>Tech Exploration: Constantly exploring new programming techniques and technologies to stay ahead in the field.</li>
+        </ol>
+    </div>
+    <div>
+        <p class="footer-text">© 2024 Samuel Muchai Kuria. All rights reserved.</p>
+        <p class="footer-text">Designed and Developed by <a href="https://github.com/Samuel-Muchai-Kuria">Samuel Muchai Kuria</a></p>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
