@@ -2,190 +2,362 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel's Portfolio</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <script src="https://kit.fontawesome.com/e4e3edd389.js" crossorigin="anonymous"></script>
+    <title>Portfolio - Automation Developer & Data Workflow Specialist</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Automation Engineer </p>
-                <h1>Hi, I'm Samuel <span>Muchai Kuria</span></h1>
-            </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+            </ul>
         </div>
-    </div>
-    <!-- ----------------------About----------------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-1">
-                    <img src="images/Sammy_10.JPG">
-                </div>
-                <div class="col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I'm Samuel Muchai Kuria, a passionate and dedicated Junior Software Automation Engineer with a strong background in web automation and data analysis. I recently completed my Bachelor's degree in Electronic and Communication Engineering at Indraprastha Institute of Information Technology, Delhi, where I honed my skills in Python, SQL, and various data visualization tools.
+    </nav>
 
-                        During my internship at Heydo Tech, I developed robust test automation scripts using Selenium and Python, which significantly streamlined testing processes and enhanced overall efficiency. My experience also includes deploying Python desktop applications and collaborating on software development projects.
-                        
-                        In addition to my professional experience, I've worked on several projects that showcase my expertise in web scraping and data analysis. From developing a global COVID-19 tracker to creating interactive dashboards in Tableau, I enjoy transforming raw data into actionable insights.
-                        
-                        I'm eager to further my career in web automation and am excited about the opportunity to contribute to innovative projects in this field. When I'm not coding or analyzing data, I enjoy photography and actively participate in cultural events at my university.
-                        
-                        Let's connect and explore how I can help bring your projects to life!
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Web Automation</span><br>Proficient in developing automation scripts using Python and Selenium, enhancing testing efficiency and accuracy.</li>
-                            <li><span>Data Analysis</span><br>Skilled in data cleaning, modeling, and visualization using tools like Tableau and Excel, transforming raw data into actionable insights.</li>
-                            <li><span>Python Programming</span><br>Experienced in Python programming with a focus on web scraping, API integration, and automation, demonstrated through various hands-on projects.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li>
-                                <span>Software Automation Engineer Intern</span><br>
-                                <strong>Heydo Tech</strong> - June 2023 – August 2023
-                                <ul>
-                                    <li><strong>Developed Automation Scripts:</strong> Created and optimized test automation scripts using Python and Selenium, reducing manual testing efforts by over 50%, and increasing test coverage by 30%.</li>
-                                    <li><strong>Collaborated on Software Deployment:</strong> Assisted in deploying Python desktop applications, successfully delivering 5 applications with a 100% success rate in creating executable files (EXEs) and configuring setups.</li>
-                                    <li><strong>Enhanced Testing Efficiency:</strong> Streamlined testing processes by implementing automation strategies, which resulted in a 40% improvement in overall testing efficiency and a 25% reduction in bug-related delays.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2020-2024</span><br>B.Tech(ECE) from IIIT Delhi.</li>
-                            <li><span>2015-2018</span><br>Secondary Education from Thika High School</li>
-                            <li><span>2007-2014</span><br>Primary Education from Gachoka Primary School </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Automation Developer & Data Workflow Specialist</h1>
+            <p>Transforming business processes through intelligent automation and data-driven solutions</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>📁</span> View Projects
+                </a>
+                <a href="#" class="btn btn-secondary" id="downloadResume">
+                    <span>📄</span> Download Resume
+                </a>
             </div>
         </div>
-    </div>    
+    </section>
 
-    <!-- ---------------------------------------Services--------------------------- -->
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I'm passionate about automation and data workflows, specializing in creating efficient solutions that streamline business processes. With expertise in RPA tools like UiPath and Power Automate, combined with strong programming skills in Python and JavaScript, I build robust automation systems that save time and reduce errors.</p>
+            
+            <p>My journey in automation started with small scripts and has evolved into comprehensive workflow solutions. I'm constantly learning and growing - currently expanding my skills in the MERN stack, AWS cloud services, and even learning Japanese to broaden my horizons. Every commit on GitHub, no matter how small, represents my commitment to continuous improvement and building something meaningful.</p>
+            
+            <div class="highlights">
+                <div class="highlight-item">
+                    <span class="highlight-icon">🤖</span>
+                    <h3>Automation Expert</h3>
+                    <p>Specializing in RPA, Python automation, and API integrations</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">📊</span>
+                    <h3>Data Enthusiast</h3>
+                    <p>Building data pipelines with MongoDB, Pandas, and analytics dashboards</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🚀</span>
+                    <h3>Continuous Learner</h3>
+                    <p>Always exploring new technologies and methodologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="services">
-        <div class="container">
-            <h1 class=""sub-title>My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>software Automation</h2>
-                    <p>Streamline your workflows and boost efficiency with robust, Python-based automation solutions tailored to your specific needs.</p>
-                    <!-- <a href="#">learn more</a> -->
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>🤖 Automation & RPA</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">UiPath</span>
+                    <span class="skill-tag">Power Automate</span>
+                    <span class="skill-tag">SeleniumBase</span>
+                    <span class="skill-tag">Process Automation</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Scraping</h2>
-                    <p>Extract and clean valuable data from websites with precision, ensuring it’s ready for actionable insights and analysis.</p>
-                    <!-- <a href="#">learn more</a> -->
+            </div>
+            
+            <div class="skill-category">
+                <h3>💻 Languages & Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React</span>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Data Analysys</h2>
-                    <p>Transform raw data into actionable insights through meticulous data cleaning, modeling, and visualization.</p>
-                    <!-- <a href="#">learn more</a> -->
+            </div>
+            
+            <div class="skill-category">
+                <h3>📊 Data & APIs</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">QuickBooks API</span>
+                    <span class="skill-tag">Google Sheets API</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>🛠️ Tools & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">AWS</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- ----------------------------------------portfolio----------------------------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class=""sub-title>My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/automation_software.png" alt="">
-                    <div class="layer">
-                        <h3>Automating repetitive data entry work </h3>
-                        <p>Created and optimized test automation scripts using Python and Selenium, reducing manual testing efforts by over 50%, and increasing test coverage by 30%.</p>
-                        <a href="#"><i class="fa-light fa-face-grin-tears"></i></a>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🧾 Invoice Automation & QuickBooks Integration</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 Demo</a>
+                        <a href="#" class="project-link">💻 Code</a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/web-scraping.jpg" alt="">
-                    <div class="layer">
-                        <h3>Web scraping </h3>
-                        <p> Extract valuable data from websites with precision and accuracy using advanced web scraping techniques.</p>
-                        <a href="https://github.com/Samuel-Muchai-Kuria/Webscaping-project-for-jobs"><i class="fa-light fa-face-grin-tears"></i></a>
+                <p>Automated vendor bill uploads using Python + Gemini AI + QuickBooks API. Streamlined invoice processing, reducing manual data entry by 90% and improving accuracy.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Gemini AI</span>
+                    <span class="tech-tag">QuickBooks API</span>
+                    <span class="tech-tag">OCR</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>📊 Sales Analytics Dashboard</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 Demo</a>
+                        <a href="#" class="project-link">💻 Code</a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/data-analytics.jpg" alt="">
-                    <div class="layer">
-                        <h3>Data Analaysis</h3>
-                        <p>Transform raw data into actionable insights through meticulous data cleaning, modeling, and visualization.</p>
-                        <a href="https://github.com/Samuel-Muchai-Kuria/Customer-analysis-in-Tableau"><i class="fa-light fa-face-grin-tears"></i></a>
+                <p>Built a dynamic dashboard pulling data from MongoDB and exposing insights through Power BI. Real-time sales analytics with automated reporting capabilities.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Data Analytics</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>📂 DigiLocker API Application Automation</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 Demo</a>
+                        <a href="#" class="project-link">💻 Code</a>
+                    </div>
+                </div>
+                <p>Integrated DigiLocker official APIs to fetch verified documents and automate license processing workflows. Seamless document verification system.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">DigiLocker API</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Document Processing</span>
+                    <span class="tech-tag">Automation</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🧼 Product Deduplication with LLM + FAISS</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 Demo</a>
+                        <a href="#" class="project-link">💻 Code</a>
+                    </div>
+                </div>
+                <p>Developed ML pipeline for matching similar products in large datasets using custom LLM and FAISS for Odoo integration. Improved data quality significantly.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">LLM</span>
+                    <span class="tech-tag">FAISS</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Odoo</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>📹 YouTube Downloader PWA</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 Demo</a>
+                        <a href="#" class="project-link">💻 Code</a>
+                    </div>
+                </div>
+                <p>Flask + JavaScript Progressive Web App with clean UI for downloading and converting YouTube videos. Responsive design with offline capabilities.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PWA</span>
+                    <span class="tech-tag">YouTube API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2 class="section-title">Blog & Learnings</h2>
+        <div class="blog-container">
+            <article class="blog-post">
+                <h3>Challenges with MongoDB + Power BI Integration</h3>
+                <p class="blog-date">Coming Soon</p>
+                <p>Exploring the complexities of connecting MongoDB with Power BI and solutions for real-time data visualization...</p>
+            </article>
+            
+            <article class="blog-post">
+                <h3>Using Gemini for Structured JSON Extraction</h3>
+                <p class="blog-date">Coming Soon</p>
+                <p>How I leverage Google's Gemini AI for extracting structured data from invoices and documents...</p>
+            </article>
+            
+            <article class="blog-post">
+                <h3>Common Python Development Fixes</h3>
+                <p class="blog-date">Coming Soon</p>
+                <p>Practical solutions for pip, virtual environments, and gitignore configurations that every developer encounters...</p>
+            </article>
+            
+            <article class="blog-post">
+                <h3>Learning Japanese as a Developer</h3>
+                <p class="blog-date">Coming Soon</p>
+                <p>My journey learning Japanese and how it's changing my perspective on problem-solving and attention to detail...</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github">
+        <h2 class="section-title">GitHub Stats & Contributions</h2>
+        <div class="github-container">
+            <div class="github-stats">
+                <h3>Consistency in Growth</h3>
+                <p>Every commit represents progress, no matter how small. Building something meaningful, one contribution at a time.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>🔥 Current Streak</h4>
+                        <p>Building daily habits</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>📈 Growth Mindset</h4>
+                        <p>Continuous learning</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>🚀 Active Projects</h4>
+                        <p>Multiple repositories</p>
                     </div>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See more</a> -->
-        </div>
-    </div>
-<!-- ---------------------------------------contact-------------------------------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> smuchaikria@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +254 111 808 308</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/Samuel-Muchai-Kuria"><i class="fab fa-github"></i></i></a>
-                        <a href="https://www.linkedin.com/in/samuel-muchai/"><i class="fab fa-linkedin"></i></a>
-                        <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
-                        <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
+            
+            <div class="pinned-repos">
+                <h3>Pinned Repositories</h3>
+                <div class="repo-grid">
+                    <div class="repo-card">
+                        <h4>automation-toolkit</h4>
+                        <p>Collection of Python automation scripts and utilities</p>
+                        <div class="repo-stats">
+                            <span>🐍 Python</span>
+                            <span>⭐ 12</span>
+                        </div>
                     </div>
-                    <a href="Samuel_Muchai_resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message"  rows="6" placeholder="Your Message" ></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                    <div class="repo-card">
+                        <h4>invoice-processor</h4>
+                        <p>AI-powered invoice processing with QuickBooks integration</p>
+                        <div class="repo-stats">
+                            <span>🐍 Python</span>
+                            <span>⭐ 8</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h4>data-dashboard</h4>
+                        <p>MongoDB + Power BI dashboard for sales analytics</p>
+                        <div class="repo-stats">
+                            <span>📊 Analytics</span>
+                            <span>⭐ 6</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-    <h3>My Hobbies</h3>
-        <ol>
-            <li>Photography: Capturing moments through the lens, with a focus on event and nature photography.</li>
-            <li>Fitness Enthusiast: Regularly hitting the gym to stay active and maintain a healthy lifestyle.</li>
-            <li>Tech Exploration: Constantly exploring new programming techniques and technologies to stay ahead in the field.</li>
-        </ol>
-    </div>
-    <div>
-        <p class="footer-text">© 2024 Samuel Muchai Kuria. All rights reserved.</p>
-        <p class="footer-text">Designed and Developed by <a href="https://github.com/Samuel-Muchai-Kuria">Samuel Muchai Kuria</a></p>
-    </div>
-    <script src="script/script.js"></script>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Build Something Amazing Together</h3>
+                <p>I'm always interested in discussing automation opportunities, data workflow challenges, or potential collaborations.</p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-method">
+                        <span>📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-method">
+                        <span>💼</span>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-method">
+                        <span>💻</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>View my code</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Automation Developer Portfolio. Built with passion for automation and data.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
