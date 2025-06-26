@@ -10,7 +10,7 @@
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --text-muted: #9ca3af;
-    --bg-primary: #ffffff;
+    --bg-primary: #f0e9e9d2;
     --bg-secondary: #f9fafb;
     --bg-card: #ffffff;
     --border-color: #e5e7eb;
@@ -85,10 +85,10 @@ body {
 
 /* Navigation */
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(241, 237, 237, 0.95);
     backdrop-filter: blur(20px);
     z-index: 1000;
     padding: 1rem 0;
@@ -879,4 +879,21 @@ footer {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.btn.btn-primary {
+  background-color: #1e40af;    /* Blue background */
+  color: white;                  /* White text */
+  border: 2px solid #1e40af;     /* Custom border */
+  border-radius: 6px;            /* Rounded corners */
+  padding: 10px 20px;            /* Spacing */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: all 0.3s ease;     /* Smooth hover effect */
+}
+
+.btn.btn-primary:hover {
+  background-color: #1e40af;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);   /* Slight lift on hover */
 }
