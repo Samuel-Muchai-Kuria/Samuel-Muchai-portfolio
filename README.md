@@ -9,7 +9,8 @@ I'm Samuel Muchai, a passionate software developer focused on building impactful
 
 
 - Email: smuchaikuria@email.com
-- [LinkedIn](https://linkedin.com/in/samuel-muchai)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/samuel-muchai)
+- Portfolio site: [Samuel Muchai Portfolio](https://samuel-muchai-portfolio.vercel.app)
 
 
 ---
